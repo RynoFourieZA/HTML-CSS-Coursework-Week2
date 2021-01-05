@@ -31,12 +31,14 @@ ul {
     list-style-type: none;
   }
 
+/* I use the id to target just the first list element*/
 #bold {
     font-weight: bold;
 }
 
 a { 
     text-decoration: none;
+    color: black;
 }
 
 a:hover {
@@ -56,6 +58,7 @@ main {
     justify-content: center;
     align-items: center;
     color: white;
+    text-indent: 100px;
 }
 
 button {
@@ -72,16 +75,18 @@ button {
     height: 60px;
 }
 
-h3 {
-    font-size: 32px;
+#intro {
+    font-size: 60px;
     font-weight: lighter;
+    margin-bottom: 5px;
 }
 
 h4 {
     display: flex;
     justify-content: center;
     font-weight: lighter;
-    font-size: 25px;
+    font-size: 40px;
+    padding-top: 7%;
     padding-left: 30%;
     padding-right: 30%;
 }
@@ -94,7 +99,7 @@ h5 {
 .starter-pack :first-child {
     width: 100%;
 }
-*/
+
 
 .container {
     display: flex;
@@ -103,6 +108,7 @@ h5 {
 }
 
 .image {
+    margin: 10px 90px 10px 90px;
     width: 100px;
 }
 
@@ -132,11 +138,20 @@ small {
 }
 
 .icon {
+    margin: 10px 10px 10px 10px;
     width: 20px;
+    border-color: rgb(163, 162, 162);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    box-sizing: content-box;
 }
 
 footer {
     margin-top: 50px;
+}
+#join {
+    font-size: 20px;
 }
 
 #footer-p {
@@ -148,11 +163,26 @@ footer {
     padding-left: 30%;
     padding-right: 30%;
 }
+@media screen and (max-width: 480px) {
+    #intro {
+        text-align: center;
+        margin-bottom: 1px;
+    }
 
-@media screen and (min-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+    }
 
-
+    .icontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
+
 
 /**
  * Add your custom styles below
