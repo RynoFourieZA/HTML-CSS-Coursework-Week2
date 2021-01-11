@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karma</title>
     <link
       href="//fonts.googleapis.com/css?family=Roboto:400,500,300"
@@ -17,10 +17,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <header>
-      <img class="logo" src="img/karma-logo.svg" alt="Karma logo" />
-    </header>
-    <nav class="navbar">
+    <section class="layout-1">
+      <header>
+        <img class="logo" src="img/karma-logo.svg" alt="Karma logo" />
+      </header>
+      <nav class="navbar">
         <ul>
           <li id="bold" class="Navbar__Link"><a href="#">Meet Karma</a></li>
           <li class="Navbar__Link"><a href="#">How it Works</a></li>
@@ -29,45 +30,57 @@
           <li class="Navbar__Link"><a href="#">Help</a></li>
           <li class="Navbar__Link"><a href="#">Login</a></li>
         </ul>
-    </nav>
-    <main class="background-img">
-      <h3 id="intro">Introducing Karma</h3>
-      <h5>Bring WiFi with you, everywhere you go</h5>
-      <button>Learn More</button>
-    </main>
-    <h4>Everyone needs a little Karma</h4>
-    <div class="container">
-      <div class="box-1">
-        <img
-          class="image"
-          src="img/icon-devices.svg"
-          alt="Image of three device desktop, tablet and cellphone"
-        />
-        <p>Internet for all devices</p>
+      </nav>
+    </section>
+    <section class="layout-2">
+      <main class="background-img">
+        <h3 id="intro">Introducing Karma</h3>
+        <h5>Bring WiFi with you, everywhere you go</h5>
+        <button>Learn More</button>
+      </main>
+    </section>
+    <section class="layout-3">
+      <h4>Everyone needs a little Karma</h4>
+      <div class="container">
+        <div class="box-1">
+          <img
+            class="image"
+            src="img/icon-devices.svg"
+            alt="Image of three device desktop, tablet and cellphone"
+          />
+          <p>Internet for all devices</p>
+        </div>
+        <div class="box-2">
+          <img class="image" src="img/icon-coffee.svg" />
+          <p>Boots your productivity</p>
+        </div>
+        <div class="box-3">
+          <img class="image" src="img/icon-refill.svg" />
+          <p>Pay as You Go</p>
+        </div>
       </div>
-      <div class="box-2">
-        <img class="image" src="img/icon-coffee.svg" />
-        <p>Boots your productivity</p>
-      </div>
-      <div class="box-3">
-        <img class="image" src="img/icon-refill.svg" />
-        <p>Pay as You Go</p>
-      </div>
-    </div>
-    <footer>
-      <h4 id="join">Join us now</h4>
-      <div class="icon-tainer">
-        <a href="#"
-          ><img class="icon" src="img/twitter-icon.svg" alt="Twitter Icon"
-        /></a>
-        <a href="#"
-          ><img class="icon" src="img/facebook-icon.svg" alt="Facebook Icon"
-        /></a>
-        <a href="#"
-          ><img class="icon" id="blue-icon" src="img/instagram-icon.svg" alt="Instagram Icon"
-        /></a>
-      </div>
-      <p id="footer-p">&copy Karma Mobility.Inc</p>
-    </footer>
+    </section>
+    <span class="line"></span>
+    <section class="layout-4">
+      <footer>
+        <h4 id="join">Join us now</h4>
+        <div class="icon-tainer">
+          <a href="#"
+            ><img class="icon" src="img/twitter-icon.svg" alt="Twitter Icon"
+          /></a>
+          <a href="#"
+            ><img class="icon" src="img/facebook-icon.svg" alt="Facebook Icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="icon"
+              id="blue-icon"
+              src="img/instagram-icon.svg"
+              alt="Instagram Icon"
+          /></a>
+        </div>
+        <p id="footer-p">&copy Karma Mobility.Inc</p>
+      </footer>
+    </section>
   </body>
 </html>

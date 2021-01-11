@@ -1,193 +1,207 @@
-
- /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
+/* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-    width: 100%;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 .logo {
-    width: 30px;
-    padding-left: 100px;
+  width: 30px;
+  padding-left: 100px;
 }
 
 .navbar {
-    background-color: #ffffff;
-    padding-left: 40%;
-    text-align: right;
-    text-indent: 50px;
-} 
+  background-color: #ffffff;
+  padding-left: 40%;
+  text-align: right;
+  text-indent: 50px;
+}
 
 ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    list-style-type: none;
-  }
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style-type: none;
+}
 
 /* I use the id to target just the first list element*/
 #bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-a { 
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 /* background image must be behind the text*/
 .background-img {
-    background-image: url(/img/first-background.jpg);
-    max-width: 1600px;
-    height: 735px;
+  background-image: url(/img/first-background.jpg);
+  max-width: 1600px;
+  height: 735px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-indent: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-indent: 100px;
 }
 
 button {
-    background-color: rgb(226, 109, 66); /* orange */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 5%;
-    width: 175px;
-    height: 60px;
+  background-color: rgb(226, 109, 66); /* orange */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+  width: 175px;
+  height: 60px;
 }
 
 #intro {
-    font-size: 60px;
-    font-weight: lighter;
-    margin-bottom: 5px;
+  font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 5px;
 }
 
 h4 {
-    display: flex;
-    justify-content: center;
-    font-weight: lighter;
-    font-size: 40px;
-    padding-top: 7%;
-    padding-left: 30%;
-    padding-right: 30%;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 40px;
+  padding-top: 7%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 h5 {
-    font-size: 32px;
-    font-weight: lighter;
+  font-size: 32px;
+  font-weight: lighter;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .image {
-    margin: 10px 90px 10px 90px;
-    width: 100px;
+  margin: 10px 90px 10px 90px;
+  width: 100px;
 }
 
 .box-1 {
-    padding-left: 20%;
-    text-align: center;
+  padding-left: 20%;
+  text-align: center;
 }
 
 .box-2 {
-    text-align: center;
+  text-align: center;
 }
 
 .box-3 {
-    padding-right: 20%;
-    text-align: center;
+  padding-right: 20%;
+  text-align: center;
 }
 
 .icon-tainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .icon {
-    margin: 10px 10px 10px 10px;
-    width: 20px;
-    border-color: rgb(163, 162, 162);
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 50%;
-    box-sizing: content-box;
-}
-
-footer {
-    margin-top: 50px;
+  margin: 10px 10px 10px 10px;
+  width: 20px;
+  border-color: rgb(163, 162, 162);
+  border-width: 1px;
+  border-style: solid;
+	border-radius: 50%;
+	
 }
 #join {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #footer-p {
-    display: flex;
-    justify-content: center;
-    font-weight: lighter;
-    font-size: 12px;
-    color: rgb(43, 42, 42);
-    padding-left: 30%;
-    padding-right: 30%;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 12px;
+  color: rgb(43, 42, 42);
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 @media screen and (max-width: 480px) {
 
-.navbar {
-    display: none;
+  nav {
+    width: 70%;
+    background-color: chocolate;
     overflow: hidden;
-    /*background-image: url(/img/menu-hamburger.svg);*/
-    background-color: brown;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #intro {
+    margin-bottom: 1px;
+    align-self: center;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .icontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.line {
+  border-bottom: 2px solid #ccc;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#join {
+  font-size: 16px;
 }
 
-#intro {
-        text-align: center;
-        margin-bottom: 1px;
-    }
+/*for tablet and desktop screen*/
+@media screen and (mix-width: 481px) {
 
-h4 {
-        font-size: 20px;
-        text-align: center;
-    }
-
-.container {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-self: center;
-    }
-
-.icontainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+layout-1 {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100%;
 }
 
+}
 
 /**
  * Add your custom styles below
@@ -198,5 +212,3 @@ h4 {
  * 
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
-
-
