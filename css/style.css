@@ -5,16 +5,27 @@ body {
   width: 100%;
 }
 
+.layout-1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+}
+
 .logo {
   width: 30px;
-  padding-left: 100px;
+  padding: 10px 20px 10px 20px;
 }
 
 .navbar {
   background-color: #ffffff;
   padding-left: 40%;
   text-align: right;
-  text-indent: 50px;
+  text-indent: 35px;
+}
+
+.menu {
+  display: none;
 }
 
 ul {
@@ -72,21 +83,30 @@ button {
   font-size: 60px;
   font-weight: lighter;
   margin-bottom: 5px;
+  text-align: center;
+  width: 80%;
 }
 
 h4 {
-  display: flex;
+  text-align: center;
   justify-content: center;
   font-weight: lighter;
   font-size: 40px;
-  padding-top: 7%;
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
+  height: 10%;
 }
 
 h5 {
   font-size: 32px;
   font-weight: lighter;
+}
+
+.layout-3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 20%;
 }
 
 .container {
@@ -101,7 +121,7 @@ h5 {
 }
 
 .box-1 {
-  padding-left: 20%;
+  padding-left: 10%;
   text-align: center;
 }
 
@@ -110,8 +130,15 @@ h5 {
 }
 
 .box-3 {
-  padding-right: 20%;
+  padding-right: 10%;
   text-align: center;
+}
+
+.line {
+  margin: 30px 30px 10px 30px;
+  width: 90%;
+  height: 0px;
+  border: 1px solid #f3f1f1;
 }
 
 .icon-tainer {
@@ -126,9 +153,9 @@ h5 {
   border-color: rgb(163, 162, 162);
   border-width: 1px;
   border-style: solid;
-	border-radius: 50%;
-	
+  border-radius: 50%;
 }
+
 #join {
   font-size: 20px;
 }
@@ -144,63 +171,142 @@ h5 {
 }
 
 @media screen and (max-width: 480px) {
-
-  nav {
-    width: 70%;
-    background-color: chocolate;
-    overflow: hidden;
-  }
-
-  main {
+  .mobile-container {
+    font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 100%;
+    margin: auto;
+    height: 500px;
+  }
+
+  .layout-1 {
+    height: 10%;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  header {
+    width: 80%;
+  }
+
+  /* Mobile Logo */
+  .logo {
+    width: 20px;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .navbar {
+    width: 20%;
+  }
+
+  .menu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 10px 15px 10px 15px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .layout-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+  }
+
+  .background-img {
+    width: 100vw;
+    height: 280vh;
+    background-image: url(/img/first-background.jpg);
+    background-size: cover;
+    background-position: center, center;
   }
 
   #intro {
-    margin-bottom: 1px;
-    align-self: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 120px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  #l2txt-1 {
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  button {
+    justify-content: center;
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .layout-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 140%;
   }
 
   h4 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    padding-top: 20px;
   }
 
   .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+  }
+
+  .container p {
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+  }
+  .box-1 {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .box-2 {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .box-3 {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .image {
+    width: 45px;
     align-self: center;
   }
 
-  .icontainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .line {
+    margin: 0px 30px 0px 30px;
+    width: 80%;
+    height: 0px;
+    border: 1px solid #d2d3d3;
   }
-}
-.line {
-  border-bottom: 2px solid #ccc;
-  width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#join {
-  font-size: 16px;
-}
 
-/*for tablet and desktop screen*/
-@media screen and (mix-width: 481px) {
+  .layout-4 {
+    width: 100%;
+    height: 40%;
+  }
 
-layout-1 {
-  display: flex;
-  flex-direction: row;
-  height: 60px;
-  width: 100%;
-}
-
+  #join {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 10px 10px 10px;
+  }
 }
 
 /**
